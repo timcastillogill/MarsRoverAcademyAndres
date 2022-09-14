@@ -19,7 +19,13 @@ class MarsRoverTest {
     public void that_it_moves_to_the_east() {
         String instructions = "RM";
 
-        Assertions.assertEquals("1:1:N", rover.processInstruction(instructions));
+        Assertions.assertEquals("1:0:E", rover.processInstruction(instructions));
+    }
+    @Test
+    public void that_it_moves_to_the_south() {
+        String instructions = "MMMRRM";
+
+        Assertions.assertEquals("0:2:S", rover.processInstruction(instructions));
     }
 
 }

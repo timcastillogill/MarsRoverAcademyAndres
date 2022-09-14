@@ -14,11 +14,19 @@ public class Coordinates {
         this.direction = direction;
     }
 
-    public void calculateNewPosition(char instruction) {
-        // Business Logic
+    public void calculateNewPosition() {
+        if (direction == 'N' || direction == 'S') {
+            yCoordinate += 1;
+        }
+        if (direction == 'E' || direction == 'W') {
+            xCoordinate += 1;
+        }
     }
 
     public void calculateNewDirection(char instruction) {
+        if (instruction == 'R' && direction == 'N') {
+            direction = 'E';
+        }
         // Business Logic
 
         /*

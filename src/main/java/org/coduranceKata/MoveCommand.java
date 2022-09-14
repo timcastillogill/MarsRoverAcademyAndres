@@ -11,6 +11,6 @@ public class MoveCommand implements Command {
 
     @Override
     public void execute() {
-        coordinates.calculateNewPosition(instruction);
+        coordinates.calculateNewPosition();
     }
 }
