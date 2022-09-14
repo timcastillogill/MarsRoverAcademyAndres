@@ -4,7 +4,7 @@ public class CommandManager {
 
 
 
-    public String figureOutWTFToDoWithThis(Coordinates coordinates, char instruction) {
+    public String figureOutWTFToDoWithThis(Coordinates coordinates, char instruction) throws Exception {
 
 
 

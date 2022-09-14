@@ -1,14 +1,12 @@
 package org.coduranceKata;
 
-import java.util.Objects;
-
 public class MarsRover {
 
 
 	CommandManager cm = new CommandManager();
 	Coordinates coordinates = new Coordinates(0, 0, 'N');
 
-	public String processInstruction(String instructions) {
+	public String processInstructions(String instructions) throws Exception {
 
 
 

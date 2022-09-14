@@ -1,5 +1,5 @@
 package org.coduranceKata;
 
 public interface Command {
-    void execute();
+    void execute() throws Exception;
 }

@@ -11,7 +11,7 @@ public class TurnCommand implements Command{
     }
 
     @Override
-    public void execute() {
+    public void execute() throws Exception {
         coordinates.calculateNewDirection(instruction);
     }
 }

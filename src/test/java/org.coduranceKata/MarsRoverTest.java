@@ -9,23 +9,22 @@ class MarsRoverTest {
 
 
     @Test
-    public void that_it_moves_to_the_north() {
+    public void that_it_moves_to_the_north() throws Exception {
         String instructions = "M";
 
-        Assertions.assertEquals("0:1:N", rover.processInstruction(instructions));
+        Assertions.assertEquals("0:1:N", rover.processInstructions(instructions));
     }
 
     @Test
-    public void that_it_moves_to_the_east() {
+    public void that_it_moves_to_the_east() throws Exception {
         String instructions = "RM";
 
-        Assertions.assertEquals("1:0:E", rover.processInstruction(instructions));
+        Assertions.assertEquals("1:0:E", rover.processInstructions(instructions));
     }
     @Test
-    public void that_it_moves_to_the_south() {
+    public void that_it_moves_to_the_south() throws Exception {
         String instructions = "MMMRRM";
 
-        Assertions.assertEquals("0:2:S", rover.processInstruction(instructions));
+        Assertions.assertEquals("0:2:S", rover.processInstructions(instructions));
     }
-
 }
