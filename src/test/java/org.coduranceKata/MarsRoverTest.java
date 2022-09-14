@@ -15,4 +15,11 @@ class MarsRoverTest {
         Assertions.assertEquals("0:1:N", rover.processInstruction(instructions));
     }
 
+    @Test
+    public void that_it_moves_to_the_east() {
+        String instructions = "RM";
+
+        Assertions.assertEquals("1:1:N", rover.processInstruction(instructions));
+    }
+
 }
